@@ -28,7 +28,7 @@ class FileStorage:
         self.all()[key] = obj
 
     def save(self):
-        """Save objects to the JSON file."""
+        """Save objects to the JSON file"""
         json_dict = {}
         for key, value in self.all().items():
             json_dict[key] = value.to_dict()
